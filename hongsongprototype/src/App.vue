@@ -37,6 +37,7 @@
           TOP
       </div>
       <div class="middle">
+        <!-- <img src="./assets/제품소개.png" alt=""> -->
         <div class="middle_inner">
            <div class="main_service_text">
             <img src="./assets/main_text.png" alt="">
@@ -44,47 +45,51 @@
           <div class="main_service">
             <ul>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/main_img.png"/>
               </li>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/main_img.png"/>
               </li>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/main_img.png"/>
               </li>
             </ul>
           </div>
           <div class="sub_service_text">
-            sub_service_text
           </div>
-
           <div class="sub_service">
             <ul>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/sub_image.png"/>
               </li>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/sub_image.png"/>
               </li>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/sub_image.png"/>
+              </li>
+              <li>
+                <img src="./assets/sub_image.png"/>
               </li>
             </ul>
           </div>
           
           <div class="contact_service_text">
-            contact_service_text
+            <img src="./assets/고객센터.png" alt="">
           </div>
           <div class="contact_service">
             <ul>
-              <li>
-                <img src="./assets/logo.png"/>
+              <li class="customer_phone">
+                <img src="./assets/고객상담전화.png" alt="">
               </li>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/오시는길.png" alt="">
               </li>
               <li>
-                <img src="./assets/logo.png"/>
+                <img src="./assets/시공문의.png" alt="">
+              </li>
+              <li>
+                <img src="./assets/블로그바로가기.png" alt="">
               </li>
             </ul>
           </div>
@@ -98,12 +103,8 @@
 </template>
 
 <script>
-import TheForm from './components/TheForm.vue';
 
 export default {
-  components: {
-    TheForm
-  }  
 }
 </script>
 
@@ -133,7 +134,7 @@ body {
 .middle{
   width:100%;
   height:1380px;
-  background: yellow;
+  /* background-image: url("./assets/제품소개.png"); */
 }
 .middle_inner{
   margin: 0 auto;
@@ -159,35 +160,43 @@ body {
 .main_service_text{
   width:100%;
   height:90px;
-  
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .main_service_text img{
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 300px ;
 }
 .main_service{
+  margin-top: 10px;
+  margin-bottom: 50px;
   width:100%;
   height:250px;
-  background:rgb(239, 138, 255);
+  /* background:rgb(239, 138, 255); */
 }
 .main_service ul li{
-  width:calc(100vh / 4);
+  width:33%;
+  height:250px;
   list-style: none;
   float: left;
-  background:rgb(239, 138, 255);
-  margin:10px;
+  margin-right:0px;
+}
+.main_service ul li img{
+  height:250px;
 }
 .sub_service_text{
   width:100%;
   height:90px;
   background:rgb(136, 25, 103);
+  margin-top:50px;
+  margin-bottom:50px;
 }
 .sub_service{
   width:100%;
   height:250px;
-  background:rgb(31, 112, 15);
 }
 .sub_service ul li{
-  width:calc(100vh / 4);
+  width:23%;
   list-style: none;
   float: left;
   margin:10px;
@@ -195,18 +204,30 @@ body {
 .contact_service_text{
   width:100%;
   height:90px;
-  background:rgb(136, 25, 103);
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.contact_service_text img{
+  margin-left: 30%;
+  margin-top: 10px;
 }
 .contact_service{
   width:100%;
   height:250px;
-  background:rgb(31, 112, 15);
+    margin-top:50px;
+  margin-bottom:50px;
+}
+.contact_service ul{
+  width:100vw;
+  margin:0 auto;
 }
 .contact_service ul li{
-  width:calc(100vh / 4);
-  list-style: none;
+  display: inline-block;
   float: left;
-  margin:10px;
+  list-style: none;
+}
+.contact_service ul .customer_phone{
+  margin-right: 15px;
 }
 .btn_group{
   margin-left:80%;
