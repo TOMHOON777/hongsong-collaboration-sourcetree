@@ -20,5 +20,8 @@ import Home from './components/Home.vue'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+}
 </style>
