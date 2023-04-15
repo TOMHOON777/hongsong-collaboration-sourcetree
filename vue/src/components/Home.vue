@@ -1,19 +1,30 @@
 <template>
+<!--  header  -->
   <HeaderVue/>
-    <img alt="Vue logo" src="../assets/img/logo.png">
+  <!--  header  -->
+
+  <!--  container  -->
+
+
+  <!--  container  -->
+
+  <!--  footer  -->
   <FooterVue/>
+  <!--  footer  -->
 </template>
 
 <script>
 import FooterVue from './common/FooterVue.vue'
 import HeaderVue from './common/HeaderVue.vue'
 
+import VueTinySlider from 'vue-tiny-slider';
+
 export default {
   name: 'Home',
   components: {
     HeaderVue,
-    FooterVue
-  }
+    FooterVue,
+  },
 }
 </script>
 
@@ -21,6 +32,13 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
 }
+
+/* header */
+
+
+
+/* footer */
+
+
 </style>
