@@ -3,7 +3,7 @@
     <div id="hd_wrap">
 
       <h1 class="logo">
-        <a href='#'> <img src="@/assets/img/hongsong_title.png" alt="퍼피플로고"></a>
+        <a href='#'> <img src="@/assets/img/hongsong_logo.png" alt="퍼피플로고"><p>홍송가구</p></a>
       </h1>
 
       <div id="gnb_wrap">
@@ -13,13 +13,14 @@
         </div>
         <nav id="menu">
           <ul class="gnb">
-            <li class="hover community"><a href="#">회사소개</a></li>
+            <li class="hover community"><a href="#">회사소개</a>
             <div id="lnb_wrap">
               <ul class="lnb lnb_menu1">
                 <li><a href="#">인사말</a></li>
                 <li><a href="#">오시는길</a></li>
               </ul>
             </div>
+            </li>
             <li><a href="#">리폼접수</a></li>
             <li><a href="#">커뮤니티</a>
             </li>
@@ -31,6 +32,9 @@
                   <li><a href="#" >F A Q</a></li>
                 </ul>
               </div>
+            </li>
+            <li class="nav_menu">
+              <img alt="메뉴" src="@/assets/icon/menu_FILL0_wght400_GRAD0_opsz48.png" >
             </li>
           </ul>
         </nav>
@@ -78,10 +82,12 @@ export default {
 }
 
 #hd_wrap {
-  width: 1200px;
-  height: 147px;
+  width: 100%;
+  height: 100px;
   margin: 0 auto;
   z-index: 30;
+  background-image: url("@/assets/img/hd_warp_back.jpg");
+
 }
 
 #gnb_wrap {
@@ -93,10 +99,18 @@ export default {
 }
 
 .logo img {
-  width: 150px;
+  width: 40px;
   height: auto;
-  margin-left: -4px;
-  margin-top: 40px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.logo p {
+  color: white;
+  float: right;
+  font-weight: 400;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-left: 3px;
 }
 
 /* 마이페이지, 로그인, 로그아웃, 회원가입 (gnb_sub)  */
@@ -104,47 +118,15 @@ export default {
   height: 40px;
 }
 
-.gnb_sub {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.gnb_sub ul {
-  float: right;
-  padding-top: 20px;
-  box-sizing: border-box;
-}
-
-.gnb_sub li {
-  float: left;
-  margin-left: 30px;
-  font-size: 13px;
-}
-
-.gnb_sub select {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #d9d9d9;
-  padding: 1px;
-  font-size: 10px;
-}
-
-.gnb_sub option {
-  background-color: #ebebebcf;
-}
-
 /* 메인메뉴바(gnb) */
 #menu {
   float: right;
-  width: 80%;
-  height: 60px;
-  line-height: 50px;
-  margin-top: 30px;
-  z-index: 10;
-  position: relative;
 }
 
 .gnb {
   float: right;
+  margin-right: 70px;
+
 }
 
 .gnb li {
@@ -156,6 +138,10 @@ export default {
   font-family: 'Godo', 'Sans-serif';
   border: 0;
 }
+.gnb li a {
+  color: rgba(255, 255, 255, 0.89);
+}
+
 .gnb li:first-child {
   margin-left: 0;
 }
@@ -172,7 +158,7 @@ export default {
 /* 드롭다운으로 내려오는 lnb 메뉴바 */
 #lnb_wrap {
   position: absolute;
-  top: 60px;
+  top: 100px;
   width: 130px;
   text-align: center;
 }
@@ -185,7 +171,7 @@ export default {
 }
 
 .lnb_menu1 {
-  margin-left: -33px;
+  margin-left: -29px;
 }
 
 .lnb_menu2 {
@@ -201,7 +187,6 @@ export default {
   font-size: 15px;
   background-color: #fff;
 }
-
 .lnb li:nth-child(odd) {
   background-color: #eee;
 }
@@ -221,5 +206,13 @@ export default {
   background-color: #8842e9;
   transition: 0.3s;
 }
-
+.nav_menu {
+  right: 30px;
+  margin-top: -10px;
+  display: none;
+}
+.nav_menu img {
+  width: 40px;
+  height: 40px;
+}
 </style>

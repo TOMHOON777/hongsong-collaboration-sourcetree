@@ -10,7 +10,6 @@
       <div class="ft_bottom">
         <ul>
           <li><a>개인정보취급방침</a></li>
-          <li><a>이메일무단수집거부</a></li>
           <li><a>서비스이용약관</a></li>
           <li class="last"><a>홈페이지개선의견</a></li>
         </ul>
@@ -26,17 +25,18 @@ export default {
 </script>
 
 <style scoped>
+@import "@/assets/css/style.css";
+
 #footer {
-  position: relative;
   background-color: #2c2c2c;
-  width: 100%;
   height: 235px;
   font-weight: 400;
   font-size: 13px;
-  text-align: center;
+  text-align: left;
+  margin-top: 2000px;
 }
 #footer ul{
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
 }
 #footer a{
@@ -44,7 +44,7 @@ export default {
 }
 
 .ft_wrap {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   color: #fff;
 }
@@ -52,6 +52,7 @@ export default {
 .ft_top {
   clear: both;
   padding-top: 20px;
+  margin-left: 30px;
 }
 
 .ft_top p {
@@ -60,7 +61,7 @@ export default {
 }
 
 .ft_bottom {
-  width: 420px;
+  width: 100%;
   margin: 0 auto;
   font-size: 11px;
   padding-top: 35px;
